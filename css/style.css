@@ -8,8 +8,9 @@
 .main-navbar {
     background-color: #1F2937;
     display: flex;
-    justify-content: space-between;
-    padding: 30px 600px;
+    justify-content: space-evenly; 
+    height: 100%;
+    padding: 30px 60px;
     
 }
 
@@ -32,18 +33,20 @@
 
 .welcome-content {
     color:#f9faf8;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #1F2937;
     display: flex;
-    gap: 50px;
-    padding: 30px 600px;
+    gap: 10px;
+    padding: 30px 60px;
+    height: auto;
 }
 
 .pic {
-    max-width: 100%;
-    max-height: 100%;
-    align-items: center;
+    max-width: 400px;
+    max-height: auto;
+    justify-self: center;
+
 }
 
 .signup p {
@@ -123,31 +126,31 @@
 }
 
 .quote {
-    height: 400px;
+    min-height: 400px;
     background-color:#E5E7EB;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px 600px;
+    padding: 0px 60px;
     flex-wrap: wrap;
 }
 
 .quote p {
     display: flex;
-    max-width: 70%;
-    width: 70%;
+    max-width: 100%;
+    width: 50%;
     justify-content: center;
     align-items: center;
     font-size: 36px;
     font-style: italic;
-    color: #1F2937
+    color: #1F2937;
 }
 
 #author {
     display: flex;
     justify-content: flex-end;
-    width: 60%;
+    width: 50%;
     font-size: 30px;
     font-weight: bold;
     color: #1F2937
@@ -164,18 +167,17 @@
     color: #f9faf8;
     height: 100px;
     display: flex;
-    margin: 100px 500px;
+    margin: 4%;
     font-size: 24px;
     align-items: center;
     border-radius: 8px;
+    padding-left: 50px;
 }
 
-.bluebox div {
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.bluebox-cta {
+    width: 800px;
 }
+
 
 
 .signup-text {
@@ -217,3 +219,31 @@ footer {
     align-items: center;
     color: #f9faf8;
 }
+
+@media (max-width: 800px) {
+    .welcome-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pic {
+        margin-top: 10px;
+    }
+
+    .quote p {
+        min-width: 100%;
+    }
+
+    .bluebox section{
+        display: flex;
+    }
+  }
